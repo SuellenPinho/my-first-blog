@@ -24,6 +24,8 @@ Dentro de um loop, ciclos entre dadas strings a cada volta dentro do loop:
             <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
+    {% empty %}
+        <h6>Não há postagens no momento</h6>
     {% endfor %}
 
 </body>
